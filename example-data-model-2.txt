@@ -1,0 +1,51 @@
+User
+{
+    "id": 1,
+    "firstName": "Thomas",
+    "lastName": "Wayne",
+    "email": "thomas.wayne@gmail.com"
+}
+
+BookClub
+{
+    id: 1,
+    name: "Dudley St Book Club",
+    createdOn: 1238943873737, //unix time stamp
+    status: active
+}
+
+Members
+{
+    id: 1,
+    userId: 1,
+    BookClub: 1,
+    status: "invited"
+}
+
+ReviewSession
+{
+    id: 1,
+    bookClubId: 1,
+    date: 349830498034, //unix time stamp
+    time: 343049343409, // unix time stamp
+    venue: "12 Dewar Terrace, Sherwood, QLD",
+    host: "Deepa",
+    bookName: "A Lost Paradise",
+    bookAuthor: "Some Smartass",
+}
+
+RSVP
+{
+    id: 1,
+    reviewSessionId: 1,
+    responses: [
+        {
+            userId: 1,
+            response: "yes"
+        },
+        {
+            userId: 2,
+            response: "yes"
+        }
+    ]
+}

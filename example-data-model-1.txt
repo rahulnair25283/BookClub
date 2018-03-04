@@ -1,0 +1,55 @@
+{
+    "userId": 1,
+    "name": "Jon JJhons",
+    "emailId": "jon.jjhons@gmail.com",
+    "bookClubs": [
+        {
+            "id": 1,
+            "name": "Dudley St Book Club",
+            "createdOn": "04/03/2018",
+            "role": "facilitator",
+            "status": "active",
+            "members": [
+                {
+                    "userId": 1,
+                    "name": "Jon JJhons",
+                    "emailId": "jon.jjhons@gmail.com"
+                },
+                {
+                    "userId": 2,
+                    "name": "Juice Wayne",
+                    "emailId": "juice.wayne@gmail.com"
+                },
+                {
+                    "userId": 3,
+                    "name": "Dark Dent",
+                    "emailId": "dark.dent@gmail.com"
+                }
+            ],
+            "reviewSessions": [
+                {
+                    "id": 1,
+                    "date": "08/04/2018",
+                    "time": "19:30",
+                    "venue": "7 Dewar Terrace, Sherwood, QLD",
+                    "host": "Dark Dent",
+                    "book": {
+                        "author": "Gary Hilbert",
+                        "name": "Lost Horizons"
+                    },
+                    "rsvps": [
+                        {
+                            "userId": 2,
+                            "rsvp": "yes"
+                        },
+                        {
+                            "userId": 3,
+                            "rsvp": "yes"
+                        }
+                    ],
+                    "status": "pending"
+                }
+            ]
+        }
+    ]
+}
