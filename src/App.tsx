@@ -1,17 +1,11 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   TouchableOpacity,
   TextInput
 } from 'react-native';
+import { ScaledSheet } from "react-native-size-matters";
 
 interface Props { };
 interface State {
@@ -70,35 +64,35 @@ export default class App extends Component<Props, State> {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   container: {
     flex: 1,
-    top: "30%",
+    top: "150@ms0.6",
     justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#fcfcfc',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: "20@ms0.6",
     textAlign: 'center',
-    margin: 10,
+    margin: "10@ms0.6",
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
+    marginBottom: "5@ms0.6",
   },
   button: {
-    width: 100,
+    width: "200@ms0.6",
     borderWidth: 1,
     borderColor: "#333333",
     justifyContent: "center",
     alignItems: "center",
   },
   nameInput: {
-    width: 200,
+    width: "200@ms0.6",
     borderBottomWidth: 1,
     borderColor: "#333333",
-    marginBottom: 5,
+    marginBottom: "5@ms0.6",
   }
 });
