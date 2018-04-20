@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -40,11 +41,12 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A3D7B29C36BEB8B2FDEE0938 /* libPods-BookClub-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D696724257AB227A9B0CBA8 /* libPods-BookClub-tvOS.a */; };
 		A4CAAE4F136CA8F0AD14BCFA /* libPods-BookClub-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB78E5D6437B5B8CB9DC6E97 /* libPods-BookClub-tvOSTests.a */; };
+		A917F2D427284B1CB8464D43 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0795A2E6DB284E45AD389894 /* libRNFirebase.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B5DC8DD28952402E9F9AB7DF /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55558C6A93E84729982BF61D /* AppCenter-Config.plist */; };
 		B7D72731A2944365B4367DEB /* libAppCenterReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8C25B6DDD14B52A1AA0198 /* libAppCenterReactNative.a */; };
 		FC1E94A52F151232C15804CF /* libPods-BookClub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF27EAA4D53ECA4FA12A47D2 /* libPods-BookClub.a */; };
-		A917F2D427284B1CB8464D43 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0795A2E6DB284E45AD389894 /* libRNFirebase.a */; };
+		FC64303C20897B42005309C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC64303B20897B42005309C2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +267,13 @@
 			remoteGlobalIDString = 3DBE0D0D1F3B181C0099AA32;
 			remoteInfo = "fishhook-tvOS";
 		};
+		FC64303920897970005309C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84985BE62004342839926D6 /* RNFirebase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNFirebase;
+		};
 		FCB046B5204AC50500B667C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -340,6 +349,7 @@
 		00E356EE1AD99517003FC87E /* BookClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BookClubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookClubTests.m; sourceTree = "<group>"; };
+		0795A2E6DB284E45AD389894 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BookClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,14 +379,14 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B6E459B94D244C1F899B571D /* AppCenterReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNative.xcodeproj; path = ../node_modules/appcenter/ios/AppCenterReactNative.xcodeproj; sourceTree = "<group>"; };
 		BEC467E3C3854B599986936F /* AppCenterReactNativeCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNativeCrashes.xcodeproj; path = "../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes.xcodeproj"; sourceTree = "<group>"; };
+		C84985BE62004342839926D6 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		DCED4F5689EF475760514B87 /* libPods-BookClubTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookClubTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF27EAA4D53ECA4FA12A47D2 /* libPods-BookClub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookClub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31B564A7AEC47328ED760D8 /* Pods-BookClub-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookClub-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookClub-tvOSTests/Pods-BookClub-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F353EF32459454BAEF7D7747 /* Pods-BookClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookClub/Pods-BookClub.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D11D1781CE6EBFF269E723 /* Pods-BookClubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookClubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookClubTests/Pods-BookClubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC64303B20897B42005309C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD648F0A7C49448DB27F34D9 /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeCrashes.a; sourceTree = "<group>"; };
-		C84985BE62004342839926D6 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; name = "RNFirebase.xcodeproj"; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		0795A2E6DB284E45AD389894 /* libRNFirebase.a */ = {isa = PBXFileReference; name = "libRNFirebase.a"; path = "libRNFirebase.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -623,6 +633,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				FC64303B20897B42005309C2 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* BookClub */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* BookClubTests */,
@@ -674,8 +685,17 @@
 				3F8C25B6DDD14B52A1AA0198 /* libAppCenterReactNative.a */,
 				73F655BAED0B4EC997D0814E /* libAppCenterReactNativeAnalytics.a */,
 				FD648F0A7C49448DB27F34D9 /* libAppCenterReactNativeCrashes.a */,
+				0795A2E6DB284E45AD389894 /* libRNFirebase.a */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		FC64303620897970005309C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC64303A20897970005309C2 /* libRNFirebase.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FCB046C1204AC50600B667C5 /* Products */ = {
@@ -884,6 +904,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = FC64303620897970005309C2 /* Products */;
+					ProjectRef = C84985BE62004342839926D6 /* RNFirebase.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1100,6 +1124,13 @@
 			remoteRef = FC11803E204ABD0A00CA24B0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		FC64303A20897970005309C2 /* libRNFirebase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFirebase.a;
+			remoteRef = FC64303920897970005309C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FCB046B6204AC50500B667C5 /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1178,6 +1209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				FC64303C20897B42005309C2 /* GoogleService-Info.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				B5DC8DD28952402E9F9AB7DF /* AppCenter-Config.plist in Resources */,
 			);
@@ -1560,6 +1592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
@@ -1574,6 +1607,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BookClub;
 				PRODUCT_NAME = BookClub;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1585,6 +1619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
@@ -1599,6 +1634,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BookClub;
 				PRODUCT_NAME = BookClub;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
