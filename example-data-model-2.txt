@@ -19,7 +19,7 @@ Members
     id: 1,
     userId: 1,
     BookClub: 1,
-    status: "invited"
+    status: ["invited","active","inactive"]
 }
 
 ReviewSession
@@ -28,7 +28,7 @@ ReviewSession
     bookClubId: 1,
     date: 349830498034, //unix time stamp
     time: 343049343409, // unix time stamp
-    venue: "12 Dewar Terrace, Sherwood, QLD",
+    venue: "12 Dewar Terrace, Sherwood, QLD 4075",
     host: "Deepa",
     bookName: "A Lost Paradise",
     bookAuthor: "Some Smartass",
@@ -40,12 +40,16 @@ RSVP
     reviewSessionId: 1,
     responses: [
         {
-            userId: 1,
+            memberId: 1,
             response: "yes"
         },
         {
-            userId: 2,
+            memberId: 2,
             response: "yes"
+        },
+        {
+            memberId: 3,
+            response: "maybe"
         }
     ]
 }

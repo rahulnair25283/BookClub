@@ -9,6 +9,8 @@ target 'BookClub' do
   
   # Required by RNFirebase
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   
   pod 'AppCenter/Crashes', '~> 1.4.0'
   pod 'AppCenter/Analytics', '~> 1.4.0'

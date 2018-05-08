@@ -26,13 +26,14 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new RNFirebasePackage(),
-            new RNFirebasePackage(),
-            new AppCenterReactNativeCrashesPackage(MainApplication.this, getResources().getString(R.string.appcenterCrashes_whenToSendCrashes)),
-            new AppCenterReactNativeAnalyticsPackage(MainApplication.this, getResources().getString(R.string.appcenterAnalytics_whenToEnableAnalytics)),
-            new AppCenterReactNativePackage(MainApplication.this)
+      return Arrays.<ReactPackage>asList(new MainReactPackage(), new RNFirebasePackage(), new RNFirebasePackage(),
+          new AppCenterReactNativeCrashesPackage(MainApplication.this,
+              getResources().getString(R.string.appcenterCrashes_whenToSendCrashes)),
+          new AppCenterReactNativeAnalyticsPackage(MainApplication.this,
+              getResources().getString(R.string.appcenterAnalytics_whenToEnableAnalytics)),
+          new AppCenterReactNativePackage(MainApplication.this), new RNFirebaseAuthPackage(),
+          new RNFirebaseDatabasePackage()
+
       );
     }
 
